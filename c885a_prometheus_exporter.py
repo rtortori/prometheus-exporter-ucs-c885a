@@ -31,8 +31,8 @@ if not password:
     sys.exit(1)
 
 # Base URLs for Redfish API
-psu_base_url = f"https://{server_ip}/redfish/v1/Chassis/Miramar_Sensor/Sensors"
-thermal_base_url = f"https://{server_ip}/redfish/v1/Chassis/Miramar_Sensor/Thermal"
+psu_base_url = f"https://{server_ip}/redfish/v1/Chassis/PlatformSensors/Sensors"
+thermal_base_url = f"https://{server_ip}/redfish/v1/Chassis/PlatformSensors/Thermal"
 
 # Disable warnings about self-signed certificates
 requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
